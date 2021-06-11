@@ -1,0 +1,31 @@
+<h1 id="tableLabel">Add Client</h1>
+<table class="example-full-width" cellspacing="0">
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="client.name" />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Adress</mat-label>
+        <input matInput [(ngModel)]="client.adress" />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>PhoneNumber</mat-label>
+        <input matInput [(ngModel)]="client.phonenumber" />
+      </mat-form-field>
+    </td>
+  </tr>
+</table>
+
+<div class="example-button-row">
+  <button mat-raised-button color="accent" (click)="saveClient()">Save Client</button>
+</div>
